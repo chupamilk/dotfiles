@@ -3,23 +3,30 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'preservim/nerdtree'
     " Auto pairs
     Plug 'jiangmiao/auto-pairs'
+    " Statusline
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes' 
+    " A start screen for Neovim
+    Plug 'mhinz/vim-startify'
+    " Indentation guides to all lines
+    Plug 'lukas-reineke/indent-blankline.nvim'
+    " Comment things faster than light
+    Plug 'preservim/nerdcommenter'
+    " Code Highlight
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " Rainbow brackets
+    Plug 'p00f/nvim-ts-rainbow' 
+    " OneDark theme
+    Plug 'joshdick/onedark.vim'
+    " Conquer of Completion
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Themes
+    Plug 'nanotech/jellybeans.vim' 
+    Plug 'FrenzyExists/aquarium-vim'
+    Plug 'metalelf0/base16-black-metal-scheme'
+    Plug 'morhetz/gruvbox'
     " Show hex color
     Plug 'chrisbra/Colorizer'
-    " Gruvbox
-    Plug  'morhetz/gruvbox'    
-    " treesitter
-    Plug 'nvim-treesitter/nvim-treesitter'
-    " search, filter, find and pic
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'    
-    " make parentheses rainbow
-    Plug 'p00f/nvim-ts-rainbow'
-    " comment now its easier!
-    Plug 'preservim/nerdcommenter'
-    " Latex baby
-    Plug 'lervag/vimtex'
-    " Collapse sections in latex
-    Plug 'matze/vim-tex-fold'
-	" Surround text with parenthesis, quatation marks etc.
-	Plug 'tpope/vim-surround'
+    " Interactive fuzzy file search tool
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()

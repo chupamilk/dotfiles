@@ -1,22 +1,12 @@
+" Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
+" General Settings
+source $HOME/.config/nvim/confs/general.vim
+" Tab Settings
+source $HOME/.config/nvim/confs/tabconfig.vim
+" Conquer of Completion
+source $HOME/.config/nvim/confs/coc.vim
+" Airline Settings
+source $HOME/.config/nvim/confs/airline-config.vim
 
-lua require('config')
-
-let mapleader = ";"
-let maplocalleader = ","
-set number
-filetype plugin on
-filetype indent on
-
-" Tabs
-set tabstop=4
-set ruler " Always shows location in file (line#)
-set smarttab " Autotabs for certain code
-set shiftwidth=4
-
-" Colorscheme
-syntax on
-
-" Latex
-let g:vimtex_view_method='zathura'
-
+lua require('settings')
